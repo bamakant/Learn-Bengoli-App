@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:minHeight="@dimen/list_item_height_"
+    android:id="@+id/list_item">
+
+    <android.support.v7.widget.ContentFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/zoom_plate">
+
+    <ImageView
+        android:layout_width="@dimen/list_item_height_"
+        android:layout_height="@dimen/list_item_height_"
+        android:id="@+id/image"/>
+
+    <LinearLayout
+        android:id="@+id/text_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        >
+
+    <TextView
+        android:id="@+id/person_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="ek"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="bottom"
+        android:layout_weight="1"
+        />
+
+        <TextView
+            android:id="@+id/rank_text_view"
+            android:layout_width="278dp"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            tools:text="one" />
+    </LinearLayout>
+    </android.support.v7.widget.ContentFrameLayout>
+</LinearLayout>
